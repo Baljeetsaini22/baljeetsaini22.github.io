@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "hero";
+    src: url(../assets/fonts/Tagesschrift/Tagesschrift-Regular.ttf);
+  }
+  @font-face {
+    font-family: "logo";
+    src: url(./assets/fonts/butter-chicken-font/ButterChicken-owDRV.otf);
+  }
+  @font-face {
+    font-family: "body";
+    src: url(./assets/fonts/Arimo/Arimo-VariableFont_wght.ttf);
+  }

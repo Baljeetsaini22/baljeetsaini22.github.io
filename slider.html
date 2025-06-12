@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .text-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1ff9d;
+        height: 130px;
+      }
+      .to-left {
+        overflow: hidden;
+        position: relative;
+        height: 60px;
+        width: 100%;
+        /* Full width of its parent */
+        white-space: nowrap;
+        font-size: 54px;
+        font-weight: 700;
+      }
+      .slider-list {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Start off the right edge */
+        transform: translateX(100%);
+        /* Animate to the left */
+        animation: scroll-left 5s linear infinite;
+        &.slider-item {
+          float: left;
+          transition: animation 0.2s ease-out;
         }
-        .text-slider {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f1ff9d;
-            height: 130px;        
-        }
-        .to-left {
-            overflow: hidden;
-            position: relative;
-            height: 60px;
-            width: 100%;
-            /* Full width of its parent */
-            white-space: nowrap;
-            font-size: 54px;
-            font-weight: 700;
-        }
-        .slider-list  {
-            position: absolute;
-            width: auto;
-            height: 100%;
-            margin: 0;
-            line-height: 50px;
-            text-align: center;
-            /* Start off the right edge */
-            transform: translateX(100%);
-            /* Animate to the left */
-            animation: scroll-left 5s linear infinite;        
-            &.slider-item {
-                float: left;
-                transition: animation 0.2s ease-out;
-            }
-        }
+      }
 
-        @keyframes scroll-left {
-            0% {
-                transform: translateX(1%);
-            }
-            100% {
-                transform: translateX(-20%);
-            }
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(1%);
         }
-        .slider-item span{
-            color: #000;
+        100% {
+          transform: translateX(-20%);
         }
+      }
+      .slider-item span {
+        color: #000;
+      }
     </style>
-</head>
-<body>    
-<div class="text-slider">
-    <marque class="to-left" >
+  </head>
+  <body>
+    <div class="text-slider">
+      <marque class="to-left">
         <ul class="slider-list">
-            <li class="slider-item">
-                <span>Satisfied Client</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span>Branding App</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span>Website</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span>App Design</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span>SEO Expart</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-                <span class="space-text"></span>
-                <span>Lets's Work</span>
-                <span class="basee">*</span>
-            </li>
+          <li class="slider-item">
+            <span>Lets's Work</span>
+            <span class="basee">*</span>
+            <span>Satisfied Client</span>
+            <span class="basee">*</span>
+            <span class="space-text"></span>
+            <span>Lets's Work</span>
+            <span class="basee">*</span>
+            <span>Website Design</span>
+            <span class="basee">*</span>
+            <span class="space-text"></span>
+            <span>Lets's Work</span>
+            <span class="basee">*</span>
+            <span>Web Development</span>
+            <span class="basee">*</span>
+            <span class="space-text"></span>
+            <span>Lets's Work</span>
+            <span class="basee">*</span>
+            <span>SEO Expart</span>
+            <span class="basee">*</span>
+            <span class="space-text"></span>
+            <span>Lets's Work</span>
+            <span class="basee">*</span>
+          </li>
         </ul>
-    </marque>
-</div>
-</body>
+      </marque>
+    </div>
+  </body>
 </html>

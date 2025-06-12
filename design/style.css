@@ -5,23 +5,25 @@
   padding: 0;
   color: #e8e4e4;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: #000;
-  font-family: "body"; 
-  
+  font-family: "body";
 }
-h2{
+.hide {
+  display: none;
+}
+h2 {
   font-size: 2.2rem;
   font-weight: 800;
 }
-h4{
+h4 {
   font-size: 2rem;
   font-weight: 600;
 }
-h5{
+h5 {
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -42,7 +44,7 @@ button {
 li {
   list-style-type: none;
 }
-a{
+a {
   text-decoration-line: none;
 }
 .navbar {
@@ -78,7 +80,8 @@ a{
   align-items: center;
   justify-content: center;
 }
-.menu-text a,.menu-text i {
+.menu-text a,
+.menu-text i {
   border-radius: 10px;
   background-color: #f1ff9d;
   color: #000;
@@ -108,8 +111,13 @@ a{
 .hero-detail {
   font-family: "hero";
   padding: 120px 0 150px;
-  width: 60%;
+  width: 50%;
   margin-left: 10%;
+}
+.about-self {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .name {
   padding: 20px 30px 21px;
@@ -130,9 +138,7 @@ a{
   font-size: 80px;
   color: #f1ff9d;
 }
-.about-self a {
-  color: #f1ff9d;
-}
+
 #hideSeek {
   font-size: 24px;
   color: #000;
@@ -153,17 +159,17 @@ a{
   flex-direction: row;
   align-items: center;
   gap: 1.5rem;
-  margin-block: 50px;
   font-size: 30px;
   margin-bottom: 40px;
   padding-bottom: 10px;
-  span, i {
-    color: #f1ff9d; 
-  } 
+  span,
+  i {
+    color: #f1ff9d;
+  }
 }
-  
+
 .hero-img {
-  width: 50%;
+  width: 40%;
   img {
     width: 100%;
   }
@@ -177,51 +183,53 @@ a{
   align-items: center;
 }
 .banner-rightinfo {
+  width: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 30px;
+  gap: 3rem;
 }
+
 .down-arrow {
-  height: auto;
-  line-height: 4; 
-  a{
-    width: 3%;
-    position: absolute;
-    transform: rotate(90deg);
-  }
-  img{
-      width: 100%;
-  }
+  position: relative;
+  transform: rotate(90deg);
+  margin-bottom: 1rem;
 }
+.down-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-ac {
-  line-height: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  i{
-    font-size: 30px;
+  i {
+    font-size: 1rem;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
   }
-  .ld, .fb{
-    background-color: blue;    
+  .ld,
+  .fb {
+    background-color: blue;
   }
-  .fb{
+  .fb {
     padding-inline: 15px;
   }
-  .tx{
+  .tx {
     background-color: #000;
   }
   .ig {
-    background: linear-gradient(#f9ce34,#ee2a7b, #6228d7);
+    background: linear-gradient(#f9ce34, #ee2a7b, #6228d7);
   }
 }
 /*! Side Social link section CSS */
 /*! about section CSS */
-.about-section{
+.about-section {
   margin: 1.5rem;
 }
 .container2 {
@@ -251,7 +259,8 @@ a{
     color: #fff;
     animation: bedt 10s linear infinite;
   }
-  &::after, ::before {
+  &::after,
+  ::before {
     position: absolute;
     content: "";
   }
@@ -261,13 +270,12 @@ a{
   width: 85%;
   margin: auto;
 }
-.row-about{
+.row-about {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.2rem;
-
 }
 .col-about {
   width: 60%;
@@ -276,7 +284,7 @@ a{
     margin-bottom: 22px;
     border-bottom: 1px solid #fff;
     display: inline-block;
-  }  
+  }
 }
 
 .row-about-1 {
@@ -286,17 +294,14 @@ a{
   gap: 10px;
 }
 
-.about-one{
-  h2 {
-    margin-bottom: 20px;
-  }
-  p {
-    max-width: 740px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
+.about-one p {
+  margin-block: 2rem;
+  max-width: 740px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
 }
-.per-info{
+.per-info {
   font-size: 1.2rem;
 }
 
@@ -304,7 +309,7 @@ a{
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
-  gap: 1rem!important;
+  gap: 1rem !important;
   .sr-tag {
     width: 120px;
   }
@@ -329,11 +334,13 @@ a{
 }
 /*! close about section CSS */
 /*! Skill & Experience section CSS */
-.skill-section, .ex-section{
+.skill-section,
+.ex-section {
   width: 100%;
   padding-block: 50px;
 }
-.skills, .experence {
+.skills,
+.experence {
   width: 85%;
   margin: auto;
   display: flex;
@@ -362,27 +369,27 @@ a{
   padding: 20px;
 }
 
-
 .ex-col1 {
   width: 40%;
 }
 .ex-colimg {
   width: 100%;
-  img{
+  img {
     width: 100%;
   }
 }
 
 .ex-col2 {
   flex: 0 0 auto;
-  width: 60%;
+  width: 40%;
 }
-.ex-skill{
+.ex-skill {
   h2 {
     margin-bottom: 20px;
     font-family: "hero";
   }
   p {
+    text-align: justify;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -390,7 +397,8 @@ a{
 .ex-box {
   margin: 1.5rem;
 }
-.skill-row, .exp-row{
+.skill-row,
+.exp-row {
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -401,12 +409,24 @@ a{
   img {
     width: 30%;
   }
+  i {
+    font-size: 4rem;
+  }
   h4 {
     line-height: 130%;
-     font-family: "Kanit", sans-serif;
+    font-family: "Kanit", sans-serif;
   }
-} 
-.exp-col{
+}
+.css {
+  color: #6228d7;
+
+  border-radius: 1rem;
+}
+.jscript {
+  color: #f9ce34;
+}
+
+.exp-col {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -437,55 +457,51 @@ a{
 .edu-info {
   width: 100%;
   display: flex;
-  margin-block: 50px; 
+  margin-block: 50px;
 }
 .education {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
   padding: 20px;
-
 }
-.align-1{
+.align-1 {
   width: 70%;
   border-radius: 15px;
-  &:hover{
+  &:hover {
     box-shadow: -5px 0 #f1ff9d;
   }
 }
 
-.align-2{
+.align-2 {
   width: 30%;
 }
 
 .course-info {
-  width: 70%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  p{
-      font-size: 1rem;
+  p {
+    font-size: 1rem;
   }
 }
 
 .college {
   line-height: 2;
   margin-bottom: 20px;
-  p{
-      font-size: 1rem;
+  p {
+    font-size: 1rem;
   }
 }
-.course-duration{
-  width: 30%;
-  span {
-      font-size: 36px;
-      font-weight: 500;
-  }
+.course-duration span {
+  font-size: 36px;
+  font-weight: 500;
 }
 
-.my-project{
+.my-project {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -509,7 +525,7 @@ a{
   margin-block: 50px;
 }
 
-.tab-Btns{
+.tab-Btns {
   background-color: #000;
   border: none;
   cursor: pointer;
@@ -522,7 +538,7 @@ a{
   }
 }
 
-.tab-content{
+.tab-content {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -530,20 +546,18 @@ a{
   overflow: hidden;
 }
 
-
 .web-shot {
   width: 100%;
   position: relative;
-  text-align: center; 
-  transition: transform .5s ease-out;  
+  text-align: center;
+  transition: transform 0.5s ease-out;
   &:hover {
     transform: scale(0.95);
-    .shot-info{
-    display: block;
-    
+    .shot-info {
+      display: block;
     }
   }
-  img{
+  img {
     width: 100%;
     border-radius: 10px;
   }
@@ -559,7 +573,7 @@ a{
   border-radius: 10px;
   display: none;
   cursor: pointer;
-  a{
+  a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,7 +594,7 @@ a{
   align-items: center;
 }
 
-.lets-info{
+.lets-info {
   width: 50%;
 }
 .lets-row {
@@ -589,12 +603,12 @@ a{
   gap: 50px;
 }
 
-.meeting{
+.meeting {
   span {
     font-family: "hero";
     font-size: 20px;
   }
-  h2{
+  h2 {
     margin-block: 30px;
   }
 }
@@ -652,11 +666,13 @@ a{
   gap: 1rem;
 }
 
-.logo-info, .form {
+.logo-info,
+.form {
   width: 30%;
 }
 
-.link, .address{
+.link,
+.address {
   width: 20%;
 }
 
@@ -667,7 +683,7 @@ a{
   margin-bottom: 30px;
 }
 
-.logo-msg p{
+.logo-msg p {
   color: #999999;
   font-size: 16px;
   font-weight: 500;
@@ -675,19 +691,19 @@ a{
 
 .link-click {
   line-height: 2;
-  a{
+  a {
     color: #999999;
   }
 }
 
-.link h5, .adds h5 {
+.link h5,
+.adds h5 {
   margin-bottom: 30px;
 }
 
 .cont-info {
   display: flex;
   flex-direction: column;
-
 }
 .addrs {
   display: flex;
@@ -695,17 +711,19 @@ a{
   align-items: center;
   gap: 20px;
   margin-block: 10px;
-  i, p {
+  i,
+  p {
     color: #999999;
   }
 }
-
 
 .form {
   text-align: left;
   line-height: 2;
   padding-inline: 20px;
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     width: 200px;
     color: #999999;
     background-color: #000;
@@ -730,5 +748,5 @@ a{
   p {
     font-size: 20px;
     font-weight: 500;
-  };
+  }
 }

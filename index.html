@@ -7,7 +7,7 @@
     <title>Baljeet Singh - Personal Portfolio Template</title>
     <link rel="shortcut icon" href="./assets/Icons/favicon-b">
     <!-- <<-Main CSS->> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>   
     <link rel="stylesheet" href="./design/style.css"/>
     <link rel="stylesheet" href="./design/responsive.css"/>
@@ -51,11 +51,15 @@
             <div class="hero">
                 <div class="hero-detail">
                     <div class="about-self">
-                        <a href="#0"><p class="name">Hello, <span id="hideSeek"></span></p></a>
-                        <h1>
-                            <span class="web">FrontEnd Web</span> <br>
-                            <span class="dev">Developer</span>
-                        </h1>
+                        <div class="user-name" >
+                            <p class="name">Hello, <span id="hideSeek"></span></p>
+                        </div>
+                        <div class="role">
+                            <h1>
+                                <span class="web">FrontEnd Web</span> <br>
+                                <span class="dev">Developer</span>
+                            </h1>
+                        </div>
                         <div class="hire-me">
                             <a href="#contact"><span>Hire me </span><i class="bi bi-arrow-up-right"></i></a>
                             <a href="./assets/CV/My Resume.docx" target="_blank"><span>Download CV </span><i class="bi bi-arrow-up-right"></i></a>
@@ -63,20 +67,23 @@
                     </div>
                 </div>
                 <div class="hero-img">
-                    <img src="./assets/images/Me.jpg" alt="">
+                    <img src="./assets/images/Me.jpg" alt="p-image">
                 </div>
             </div>
             <div class="banner-rightinfo">
                 <div class="down-arrow">
-                    <p>FOLLOW_ME</p> <br><br>
-                    <img src="./assets/Icons/scroll-down.png" alt="">
+                    <p>FOLLOW_ME</p>
+                </div>
+                <div class="d-aro">
+                    <i class="bi bi-arrow-down"></i>                    
                 </div>
                 <div class="down-social">
                     <ul class="social-ac">
-                        <li><a href="https://www.linkedin.com/in/baljeet-singh-13590834b/" title="linkedin"><i class="fa-brands fa-linkedin-in ld"></i></i></li>
-                        <li><a href="https://x.com/_Baljeet_0" title="twitter"><i class="fa-brands fa-x-twitter tx"></i></i></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=100090123884874" title="FB"><i class="fa-brands fa-facebook-f fb"></i></i></a></li>
-                        <li><a href="https://www.instagram.com/_baljeet.0/?hl=en" title="insta"><i class="fa-brands fa-instagram ig"></i></i></li>                        
+                        <li><a href="https://www.linkedin.com/in/baljeet-singh-13590834b/" title="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in ld"></i></li>
+                        <li><a href="https://github.com/Baljeetsaini22" title="linkedin" target="_blank"><i class="bi bi-github git"></i></li>
+                        <li><a href="https://x.com/_Baljeet_0" title="twitter" target="_blank"><i class="fa-brands fa-x-twitter tx"></i></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090123884874" title="FB" target="_blank"><i class="fa-brands fa-facebook-f fb"></i></a></li>
+                        <li><a href="https://www.instagram.com/_baljeet.0/?hl=en" title="insta" target="_blank"><i class="fa-brands fa-instagram ig"></i></li>                        
                     </ul>
                 </div>
             </div>
@@ -96,7 +103,9 @@
                         <h5>About Me</h5>
                         <div class="about-one">
                             <h2>Professional Web Developer</h2>
-                            <p>Professional Problems solution amet consectetur, adipisicing amet consectetur, adipisicing elit. Sunt, deserunt dolorum. Quo quaerat, itaque porro totam molestias repellat ex animi maiores illum magni incidunt.</p>
+                            <p>
+                                I’m a dedicated Frontend Developer with hands-on experience in building responsive websites using HTML, CSS, and JavaScript. I focus on writing clean code, creating user-friendly interfaces, and ensuring websites work smoothly across all devices and browsers.
+                            </p>
                             <div class="row-about-1">
                                 <div class="col-about-1">
                                     <ul class="per-info">
@@ -113,18 +122,18 @@
                                         <li class="info-list">
                                             <span class="sr-tag">Phone</span>
                                             <span>:</span>
-                                            <span class="sr-name">+91 1234567890</span>
+                                            <span class="sr-name">+91 9728067440</span>
                                         </li>
                                         <li class="info-list">
                                             <span class="sr-tag">Email</span>
                                             <span>:</span>
                                             <span class="sr-name">Baljeetsaini7440@gmail.com</span>
                                         </li>
-                                        <li class="info-list">
+                                        <!-- <li class="info-list ">
                                             <span class="sr-tag">Experience</span>
                                             <span>:</span>
                                             <span class="sr-name">1+ Years</span>
-                                        </li>
+                                        </li> -->
                                         <li class="info-list">
                                             <span class="sr-tag">Freelance</span>
                                             <span>:</span>
@@ -137,7 +146,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-about-2">
+                                <div class="hide col-about-2">
                                     <div class="review">
                                         <span>4.5</span><br>
                                         <a href="#0">Rating</a>
@@ -154,8 +163,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-img">
-                        <div class="col-2" data-aos="fade-left">
+                    <div class="col-img" data-aos="fade-left">
+                        <div class="col-2" >
                             <img src="./assets/images/Me.jpg" alt="image">
                         </div>
                     </div>
@@ -169,41 +178,43 @@
         <div class="skills">
             <div class="ex-head"><h5>Take a Look</h5></div>
             <div class="ex-row">
-                <div class="ex-col1">
+                <div class="ex-col1" data-aos="fade-right">
                     <div class="ex-colimg">
-                        <img src="./assets/images/t4.png" alt="img">
+                        <img src="./assets/images/t2.png" alt="img">
                     </div>
                 </div>
-                <div class="ex-col2">
-                    <div class="ex-skill">
+                <div class="ex-col2" data-aos="fade-left">
+                    <div class="ex-skill" >
                         <h2>My Skills</h2>
-                        <p>Professional Problems solution amet consectetur, adipisicing amet consectetur, adipisicing elit. Sunt, deserunt dolorum. Quo quaerat, itaque porro totam molestias repellat ex animi maiores illum magni incidunt.</p>
+                        <p>
+                            Proficient in HTML, CSS, JavaScript, and Tailwind CSS with a focus on responsive design and clean, maintainable code. Passionate about building user-friendly and accessible web interfaces.
+                        </p>
                     </div>  
-                    <div class="ex-box">
+                    <div class="ex-box" ">
                         <div class="skill-row">
                             <div class="skill-col">
-                                <img src="./assets/images/php.png" alt="php">
-                                <h4>PHP Lavael</h4>
+                                <img src="./assets/images/html.png" alt="html">
+                                <h4>HTML 5</h4>
                             </div>
                             <div class="skill-col">
                                 <img src="./assets/images/figma.png" alt="figma">
                                 <h4>Figma</h4>
                             </div>
                             <div class="skill-col">
+                                <i class="bi bi-javascript jscript"></i>
+                                <h4>JavaScript</h4>
+                            </div>
+                            <div class="skill-col">
+                                <i class="bi bi-css css"></i>
+                                <h4>CSS 3</h4>
+                            </div>
+                            <div class="skill-col">
                                 <img src="./assets/images/photo.png" alt="PS">
                                 <h4>Photoshop</h4>
                             </div>
                             <div class="skill-col">
-                                <img src="./assets/images/html.png" alt="html">
-                                <h4>HTML 5</h4>
-                            </div>
-                            <div class="skill-col">
                                 <img src="./assets/images/wordpress.png" alt="Wordpress">
                                 <h4>Wordpress</h4>
-                            </div>
-                            <div class="skill-col">
-                                <img src="./assets/images/python.png" alt="python">
-                                <h4>Python</h4>
                             </div>
                         </div>
                     </div>
@@ -213,8 +224,8 @@
     </section>
     <!-- <<-Skill personal->> -->
     <!-- <<-Experence personal->> -->
-    <section class="ex-section">
-        <div class="experence">
+    <section class="hide ex-section">
+        <!-- <div class="experence">
             <div class="ex-head"><h5>My Job Info</h5></div>
             <div class="row-exp">
                 <div class="ex-col2">
@@ -265,7 +276,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <iframe src="./slider.html" frameborder="0" width="100%" height="250px" title="slider"></iframe>
     <!-- <<-Experence personal->> -->
@@ -281,9 +292,8 @@
                             <div class="course-info">
                                 <div class="college">
                                     <h4>Computer Operator & Programming Assistent</h4>
-                                    <p>NCVT</p>
+                                    <p>ITI <strong> (NCVT)</strong></p>
                                 </div>
-                                <p>Adipisicing elit. Illum totam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos itaque consequuntur in saepe enim nihil pariatur, ab, molestias vel similique est, commodi nesciunt? Odio inventore quis eius veniam. Aliquam rem.</p>
                             </div>
                             <div class="course-duration">
                                 <span>2017 - 2018</span>
@@ -293,9 +303,7 @@
                     <div class="align-2"></div>
                 </div>
                 <div class="edu-info"> 
-                    <div class="align-2">
-                        <div class="education "> </div>
-                    </div>    
+                    <div class="align-2"></div>    
                     <div class="align-1">           
                         <div class="education">                    
                             <div class="course-info">
@@ -303,7 +311,6 @@
                                     <h4>Diploma in Computer Application</h4>
                                     <p>Hartron Skill Center</p>
                                 </div>
-                                <p>Adipisicing elit. Illum totam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos itaque consequuntur in saepe enim nihil pariatur, ab, molestias vel similique est, commodi nesciunt? Odio inventore quis eius veniam. Aliquam rem.</p>
                             </div>
                             <div class="course-duration">
                                 <span>2018 - 2019</span>
@@ -316,40 +323,48 @@
                         <div class="education">
                             <div class="course-info">
                                 <div class="college">
+                                    <h4>Bachlor's of Art ( Distance Education)</h4>
+                                    <p>Guru Jamblashwer University Sicenc and Technology, Hisar</p>
+                                </div>
+                            </div>
+                            <div class="course-duration">
+                                <span>2019-2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="align-2"></div>
+                </div>
+                <div class="edu-info">
+                    <div class="align-2"></div>
+                    <div class="align-1">
+                        <div class="education">
+                            <div class="course-info">
+                                <div class="college">
                                     <h4>Computer Science & Engineering</h4>
                                     <p>Sri Sukhmani Polytechinc</p>
                                 </div>
-                                <p> Adipisicing elit. Illum totam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos itaque consequuntur in saepe enim nihil pariatur, ab, molestias vel similique est, commodi nesciunt? Odio inventore quis eius veniam. Aliquam rem. </p>
                             </div>
                             <div class="course-duration">
                                 <span>2021-2024</span>
                             </div>
                         </div>
                     </div>
-                    <div class="align-2">
-                        <div class="education"></div>
-                    </div>
                 </div>
                 <div class="edu-info"> 
-                    <div class="align-2">
-                        <div class="education "></div>
-                    </div>    
                     <div class="align-1">           
                         <div class="education">                    
                             <div class="course-info">
                                 <div class="college">
-                                    <h4>Web Development Course</h4>
+                                    <h4>Frentend Web Development Traine</h4>
                                     <p>Digibeez</p>
                                 </div>
-                                <p>
-                                    Adipisicing elit. Illum totam nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. A dignissimos itaque consequuntur in saepe enim nihil pariatur, ab, molestias vel similique est, commodi nesciunt? Odio inventore quis eius veniam. Aliquam rem.
-                                 </p>
                             </div>
                             <div class="course-duration">
                                 <span>Feb 2025 - May 2025</span>
                             </div>
                         </div>
                     </div>
+                    <div class="align-2"></div>   
                 </div>
             </div>
         </section>
@@ -431,7 +446,7 @@
     <section class="container2">
         <div class="project-meeting">
             <div class="lets-cont">
-                <div class="lets-info">
+                <div class="lets-info" data-aos="fade-right">
                     <div class="lets-row">
                         <div class="meeting">
                             <span>Need a Project?</span>
@@ -442,8 +457,8 @@
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="cont-me">
-                                <span>Email</span>
-                                <p>baljeet123@gmail.com</p>
+                                <strong>Email</strong>
+                                <p>Baljeetsaini7440@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-me">
@@ -451,13 +466,13 @@
                                 <i class="bi bi-geo-alt"></i>
                             </div>
                             <div class="cont-me">
-                                <span>Location</span>
-                                <p>Sector 109, Mohali</p>
+                                <strong>Location</strong>
+                                <p>Kaithal, Haryana</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lets-img">
+                <div class="lets-img" data-aos="fade-left">
                     <div class="img-meeting">
                         <img src="./assets/images/t3.png" alt="img">
                     </div>
@@ -499,20 +514,18 @@
                             <div class="cont-info">
                                 <div class="addrs">
                                     <div class="icon-foot"><i class="bi bi-geo-alt"></i></div>
-                                    <div class="locat"><p>Sector 109 Mohali</p></div>
+                                    <div class="locat"><p>Zirakpur, Mohali</p></div>
                                 </div>
                                 <div class="addrs">
                                     <div class="icon-foot"><i class="bi bi-chat-left-dots"></i></div>
                                     <div class="locat">
-                                        <p>info123@yahoo.com</p>
-                                        <p>admin123@Example.com</p>
+                                        <p>baljeetsaini7440@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="addrs">
                                     <div class="icon-foot"><i class="bi bi-telephone"></i></div>
                                     <div class="locat">
-                                        <p>+91 9900011000</p>
-                                        <p>+91 9900012000</p>
+                                        <p>+91 9728067440</p>
                                     </div>
                                 </div>
                             </div>

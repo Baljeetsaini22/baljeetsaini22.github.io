@@ -1,4 +1,7 @@
 @media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
   h2 {
     font-size: 2rem;
   }
@@ -14,14 +17,6 @@
     padding: 15px 12px;
     font-size: 1.2rem;
     font-weight: 500;
-  }
-
-  .web {
-    font-size: 60px;
-  }
-  .dev {
-    font-size: 60px;
-    color: #f1ff9d;
   }
   .hire-me {
     gap: 1.3rem;
@@ -50,6 +45,10 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .name {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
   .hero-detail {
     width: 80%;
   }
@@ -65,7 +64,7 @@
     padding-right: 0;
   }
   .col-img {
-    width: 40%;
+    width: 100%;
   }
   .row-about-1 {
     margin-block: 50px;
@@ -195,6 +194,51 @@
 }
 
 @media screen and (max-width: 768px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.3rem;
+  }
+  .main-menu a,
+  .menu-text a {
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .hire-me {
+    gap: 1rem;
+    font-size: 15px;
+  }
+  .banner-rightinfo {
+    width: 50%;
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+  .down-arrow {
+    margin: 0;
+  }
+  .d-aro {
+    display: none;
+  }
+
+  .social-ac i {
+    font-size: 0.8rem;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
   .row-about-1 {
     width: 100%;
     flex-direction: column;

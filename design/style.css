@@ -120,7 +120,7 @@ a {
   gap: 2rem;
 }
 .name {
-  padding: 20px 30px 21px;
+  padding: 1rem 2rem;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -131,18 +131,13 @@ a {
   transition: all 0.5s;
   color: #000;
 }
-.web {
-  font-size: 80px;
+h1 {
+  font-size: 5rem;
 }
 .dev {
-  font-size: 80px;
   color: #f1ff9d;
 }
 
-#hideSeek {
-  font-size: 24px;
-  color: #000;
-}
 .letter {
   display: inline-block;
   opacity: 0;
@@ -172,6 +167,7 @@ a {
   width: 40%;
   img {
     width: 100%;
+    border-radius: 4rem;
   }
 }
 
@@ -188,7 +184,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-right: 30px;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .down-arrow {
@@ -210,7 +206,7 @@ a {
   i {
     font-size: 1rem;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
   }
   .ld,
@@ -218,7 +214,7 @@ a {
     background-color: blue;
   }
   .fb {
-    padding-inline: 15px;
+    padding-inline: 12px;
   }
   .tx {
     background-color: #000;
@@ -329,6 +325,7 @@ a {
     width: 100%;
     img {
       width: 100%;
+      border-radius: 4rem;
     }
   }
 }
@@ -376,6 +373,7 @@ a {
   width: 100%;
   img {
     width: 100%;
+    border-radius: 4rem;
   }
 }
 
@@ -413,7 +411,6 @@ a {
     font-size: 4rem;
   }
   h4 {
-    line-height: 130%;
     font-family: "Kanit", sans-serif;
   }
 }
@@ -621,6 +618,7 @@ a {
   width: 100%;
   img {
     width: 100%;
+    border-radius: 4rem;
   }
 }
 
